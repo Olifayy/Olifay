@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-cd $HOME/Tshake
+cd $HOME/Olifay
 rm -rf $HOME/.telegram-cli
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x Tshake
-chmod +x ts
+chmod +x Olifay
+chmod +x oy
 ./ts
 }
 if [ "$1" = "ins" ]; then
