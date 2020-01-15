@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
 cd $HOME/Olifay
 rm -rf $HOME/.telegram-cli
-install() {
-rm -rf $HOME/.telegram-cli
+Olifayins() {
 sudo chmod +x tg
 chmod +x Olifay
 chmod +x oy
 ./ts
 }
 if [ "$1" = "ins" ]; then
-install
+Olifayins
 fi
-chmod +x install.sh
-lua start.lua
+chmod +x Run.sh
+lua Run.lua
