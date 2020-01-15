@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 cd $HOME/Olifay
-install() {
 rm -rf $HOME/.telegram-cli
+install() {
 sudo chmod +x tg
 chmod +x Olifay
 chmod +x oy
-./ts
+./oy
 }
 get() {
 rm -fr Olifay.lua
 rm -fr sudo.lua
 wget "https://raw.githubusercontent.com/Olifayy/Olifay/master/Olifay.lua"
-lua start.lua
+lua Run.lua
 }
 installall(){
 apt update
@@ -49,6 +49,6 @@ cd ..
 rm -rf luarocks*
 cd Olifay
 rm -rf luarocks*
-lua start.lua
+lua Run.lua
 
 
