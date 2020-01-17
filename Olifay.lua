@@ -5902,14 +5902,14 @@ Text = [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 📊┇ [Source Channel](https://t.me/ZX_XX)
 
-📋┇ [Olifay Dev](https://t.me/olifay)
+📋┇ [Olifay Dev](https://t.me/Olifay)
 
-📁┇ [Source  Files](https://t.me/Olifay_info)
+📁┇ [Source  Files](https://t.me/DEV_OLIFAY)
 
-🌐┇ [Olifay iNDT](https://t.me/ZX_XX/4611)
+🌐┇ [Olifay iNDT](https://t.me/olifay/112)
  
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-📧┇ [TWS Olifay](https://t.me/A_5bot)
+📧┇ [TWS Olifay](https://t.me/Rokaanbot)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
