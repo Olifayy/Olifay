@@ -5900,9 +5900,7 @@ Text = [[
 
 🌐┇Olifay TEAM 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📊┇ [Source Channel](https://t.me/ZX_XX)
-
-📋┇ [Olifay Dev](https://t.me/Olifay)
+📊┇ [Source Channel](https://t.me/Olifay)
 
 📁┇ [Source  Files](https://t.me/DEV_OLIFAY)
 
