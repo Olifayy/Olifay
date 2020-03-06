@@ -35,13 +35,13 @@ end
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 if not database:get(Server_Tshake.."Id_Tshake") then
-print("\27[1;34m\n»» Send Your UserName Sudo : \27[m")
+print("\27[1;34m\n»» Send Your id Sudo : \27[m")
 local UserName = io.read():gsub('@','')
 if UserName ~= '' then
-io.write('\n\27[1;31m»» The UserNamr Is Saved\n\27[0;39;49m')
-database:set(Server_Tshake.."Id_Tshake",Json.Info.Id)
+io.write('\n\27[1;31m»» The id Is Saved\n\27[0;39;49m')
+database:set(Server_Tshake.."Id_Tshake",UserName)
 else
-io.write('\n\27[1;31mThe UserName was not Saved\n\27[0;39;49m')
+io.write('\n\27[1;31mThe id was not Saved\n\27[0;39;49m')
 os.execute('lua Run.lua')
 end 
 os.execute('lua Run.lua')
