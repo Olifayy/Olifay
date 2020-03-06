@@ -5,14 +5,13 @@ JSON = dofile("./File_Libs/JSON.lua")
 local database = dofile("./File_Libs/redis.lua").connect("127.0.0.1", 6379)
 Server_Tshake = io.popen("echo $SSH_CLIENT | awk '{ print $1}'"):read('*a')
 local AutoFiles_Tshake = function() 
-local Create_Info = function(Token,Sudo,UserName)  
+local Create_Info = function(Token,Sudo)  
 local Tshake_Info_Sudo = io.open("sudo.lua", 'w')
 Tshake_Info_Sudo:write([[
 token = "]]..Token..[["
 
 Sudo = ]]..Sudo..[[  
 
-UserName = "]]..UserName..[["
 ]])
 Tshake_Info_Sudo:close()
 end  
@@ -47,7 +46,7 @@ end
 os.execute('lua Run.lua')
 end
 local function Files_Tshake_Info()
-Create_Info(database:get(Server_Tshake.."Token_Tshake"),database:get(Server_Tshake.."Id_Tshake"),database:get(Server_Tshake.."UserName_Tshake"))   
+Create_Info(database:get(Server_Tshake.."Token_Tshake"),database:get(Server_Tshake.."Id_Tshake"))   
 local RunTshake = io.open("Olifay", 'w')
 RunTshake:write([[
 #!/usr/bin/env bash
