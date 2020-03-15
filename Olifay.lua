@@ -2219,7 +2219,7 @@ return false
 end
 
 if text == ("رفع منشئ اساسي") and tonumber(msg.reply_to_message_id_) ~= 0 and DevBot(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2233,7 +2233,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^رفع منشئ اساسي @(.*)$") and DevBot(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2256,7 +2256,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Olifay,
 return false
 end
 if text and text:match("^رفع منشئ اساسي (%d+)$") and DevBot(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2268,7 +2268,7 @@ Reply_Status(msg,userid,"reply","💢┇تم ترقيته منشئ اساسي")
 return false
 end
 if text == ("تنزيل منشئ اساسي") and tonumber(msg.reply_to_message_id_) ~= 0 and DevBot(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2282,7 +2282,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^تنزيل منشئ اساسي @(.*)$") and DevBot(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2302,7 +2302,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Olifay,
 return false
 end
 if text and text:match("^تنزيل منشئ اساسي (%d+)$") and DevBot(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2315,7 +2315,7 @@ return false
 end
 
 if text == "رفع منشئ" and tonumber(msg.reply_to_message_id_) ~= 0 and BasicConstructor(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2328,7 +2328,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Olifay, nil)
 end
 if text and text:match("^رفع منشئ @(.*)$") and BasicConstructor(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2351,7 +2351,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Olifay,
 end
 ------------------------------------------------------------------------
 if text and text:match("^رفع منشئ (%d+)$") and BasicConstructor(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2370,7 +2370,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 end
 ------------------------------------------------------------------------
 if text and text:match("^تنزيل منشئ @(.*)$") and BasicConstructor(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2389,7 +2389,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Olifay,
 end
 ------------------------------------------------------------------------
 if text and text:match("^تنزيل منشئ (%d+)$") and BasicConstructor(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2401,7 +2401,7 @@ Reply_Status(msg,userid,"reply","💢┇تم تنزيله من المنشئين"
 end
 
 if text == ("رفع مدير") and tonumber(msg.reply_to_message_id_) ~= 0 and Constructor(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2415,7 +2415,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end  
 if text and text:match("^رفع مدير @(.*)$") and Constructor(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2439,7 +2439,7 @@ return false
 end 
 
 if text and text:match("^رفع مدير (%d+)$") and Constructor(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2451,7 +2451,7 @@ Reply_Status(msg,userid,"reply","💢┇تم ترقيته مدير المجمو�
 return false
 end  
 if text == ("تنزيل مدير") and tonumber(msg.reply_to_message_id_) ~= 0 and Constructor(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2465,7 +2465,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end  
 if text and text:match("^تنزيل مدير @(.*)$") and Constructor(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2484,7 +2484,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Olifay,
 return false
 end  
 if text and text:match("^تنزيل مدير (%d+)$") and Constructor(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2497,7 +2497,7 @@ return false
 end
 
 if text == ("رفع ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2515,7 +2515,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^رفع ادمن @(.*)$") and Owner(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2542,7 +2542,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Olifay,
 return false
 end
 if text and text:match("^رفع ادمن (%d+)$") and Owner(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2558,7 +2558,7 @@ Reply_Status(msg,userid,"reply","💢┇تم ترقيته ادمن للمجمو�
 return false
 end
 if text == ("تنزيل ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2572,7 +2572,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^تنزيل ادمن @(.*)$") and Owner(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2591,7 +2591,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Olifay,
 return false
 end
 if text and text:match("^تنزيل ادمن (%d+)$") and Owner(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2604,7 +2604,7 @@ return false
 end
 
 if text == ("رفع مميز") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2622,7 +2622,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^رفع مميز @(.*)$") and Addictive(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2650,7 +2650,7 @@ return false
 end
 
 if text and text:match("^رفع مميز (%d+)$") and Addictive(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2667,7 +2667,7 @@ return false
 end
 
 if (text == ("تنزيل مميز")) and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2681,7 +2681,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^تنزيل مميز @(.*)$") and Addictive(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2700,7 +2700,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Olifay,
 return false
 end
 if text and text:match("^تنزيل مميز (%d+)$") and Addictive(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2712,7 +2712,7 @@ Reply_Status(msg,userid,"reply","💢┇تم تنزيله من المميزين"
 return false
 end  
 if text and text:match("رفع (.*)") and tonumber(msg.reply_to_message_id_) > 0 and Addictive(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2744,7 +2744,7 @@ tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonu
 end
 end
 if text and text:match("تنزيل (.*)") and tonumber(msg.reply_to_message_id_) > 0 and Addictive(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2776,7 +2776,7 @@ tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonu
 end
 end
 if text and text:match("^رفع (.*) @(.*)") and Addictive(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -2811,7 +2811,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text1[3]},py_username,nil)
 end 
 end
 if text and text:match("^تنزيل (.*) @(.*)") and Addictive(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -6150,7 +6150,7 @@ end ---- Chat_Type = 'GroupBot'
 end ---- Chat_Type = 'GroupBot' 
 
 if text == 'تفعيل' and DevBot(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 vardump(JSON.decode(url))
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
@@ -6204,7 +6204,7 @@ end,nil)
 end,nil)
 end
 if text == 'تعطيل' and DevBot(msg) then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
@@ -6246,7 +6246,7 @@ end,nil)
 end,nil) 
 end
 if text == 'تفعيل' and not DevBot(msg) and not database:get(bot_id..'Olifay:Free:Add:Bots') then 
-local url,res = https.request('https://viphack.gq/Ch/?id='..msg.sender_user_id_)
+local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
 send(msg.chat_id_,msg.id_,'👤┇لا يمكنك استخدام البوت\n📛┇عليك الاشتراك في قناة السورس\n📤┇لتتمكن من استخدام الاوامر \n🔰┇CH ~ [@JJJYT]')   
