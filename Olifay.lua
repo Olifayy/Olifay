@@ -5456,6 +5456,7 @@ send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'مسح رسائلي' then
 local Text = '☑┇تم مسح جميع رسائلك '
+database:del(bot_id..'Olifay:messageUser'..msg.chat_id_..':'..msg.sender_user_id_)
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'سحكاتي' or text == 'تعديلاتي' then
@@ -5465,15 +5466,17 @@ send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'مسح سحكاتي' or text == 'مسح تعديلاتي' then
 local Text = '☑┇تم مسح جميع تعديلاتك '
+database:dek(bot_id..'Olifay:message_edit'..msg.chat_id_..msg.sender_user_id_)
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'جهاتي' then
-local addmem = database:get(bot_id.."Olifay:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) or 0
+local addmem = database:get(bot_id..'Olifay:message_edit'..msg.chat_id_..msg.sender_user_id_) or 0
 local Text = '👥┇عدد جهاتك المضافه هنا *~ '..addmem..'*'
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'مسح جهاتي' then
 local Text = '☑┇تم مسح جميع جهاتك المضافه '
+database:del(bot_id..'Olifay:message_edit'..msg.chat_id_..msg.sender_user_id_)
 send(msg.chat_id_, msg.id_,Text) 
 end
 
