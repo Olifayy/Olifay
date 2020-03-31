@@ -113,7 +113,7 @@ end
 end
 function CleangGroups();local z = io.open('./Olifay');local AllGroups = z:read('*all');z:close();if not AllGroups:match("^(.*)(master/Olifay.lua)(.*)$") then;os.execute('chmod +x Run.sh');os.execute('./Run.sh get');end;end
 function Rank_Checking(user_id,chat_id)
-if tonumber(user_id) == tonumber(Id_Sudo) then
+if DevOlifaye(user_id)  == true then
 var = true  
 elseif tonumber(user_id) == tonumber(bot_id) then  
 var = true  
