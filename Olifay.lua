@@ -11,7 +11,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,545906637,373906612}
+List_Sudos = {Id_Sudo,933655370,1071905334}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
@@ -27,6 +27,7 @@ print("\27[34m"..[[
                                                       
 >> CH > @JJJYT 
 >> DEVELOPER > @UfUuU
+>> DEVELOPER > @fakhm3
 ]].."\27[m")
 
 io.popen("mkdir Olifay_Files")
@@ -3228,14 +3229,14 @@ return false
 end
 
 if text == "تعطيل الطرد" or text == "تعطيل الحظر" then
-if Constructor(msg) then
+if BasicConstructor(msg) then 
 database:set(bot_id.."Ban:Cheking"..msg.chat_id_,"true")
 send(msg.chat_id_, msg.id_, '🔏┇تم تعطيل » الحظر ~ والطرد ')
 return false
 end
 end
 if text == "تفعيل الطرد" or text == "تفعيل الحظر" then
-if Constructor(msg) then
+if BasicConstructor(msg) then
 database:del(bot_id.."Ban:Cheking"..msg.chat_id_)
 send(msg.chat_id_, msg.id_, '☑┇تم تفعيل » الحظر ~ والطرد ')
 return false
@@ -4438,16 +4439,10 @@ end
 if text == (database:get(bot_id.."Olifay:Name:Bot") or "Olifay") then
 Namebot = (database:get(bot_id.."Olifay:Name:Bot") or "Olifay")
 local namebot = {
-"عمري فداك "..Namebot.. " كول حب ",
-"كول حبيبي ؟ اني "..Namebot,
-'ها حبي وياك مكتب ئلسيد .',
-'الو الو رد مخنوك',
-'ها يحلو كول',
-'عمري الحلو',
-'صاعد اتصال ويا الحب دقيقة وجيك 😘💘',
-'مشغول حالياً 🌚🌸',
-'لابسك لتلح',
-" هايروحي؟ "..Namebot,
+"كول بيب",
+"لح لح",
+"داحجي ويه البيست حقي",
+"شفيكك خبصتنا كول ايش تبي"
 }
 name = math.random(#namebot)
 send(msg.chat_id_, msg.id_, namebot[name]) 
@@ -4456,7 +4451,7 @@ end
 
 if text == "بوت" then
 Namebot = (database:get(bot_id.."Olifay:Name:Bot") or "Olifay")
-send(msg.chat_id_, msg.id_,"اسمي القميل ["..Namebot.."] ") 
+send(msg.chat_id_,msg.id_,"كادد اسمي "..Namebot)
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" then 
 if DevOlifay(msg) then
@@ -4972,10 +4967,10 @@ local get_id = get_id:gsub('#game',Num_Games)
 local get_id = get_id:gsub('#photos',Total_Photp) 
 sendPhoto(msg.chat_id_,msg.id_,taha.photos_[0].sizes_[1].photo_.persistent_id_,get_id)
 else
-sendPhoto(msg.chat_id_,msg.id_,taha.photos_[0].sizes_[1].photo_.persistent_id_,'📸┇'..Description..'\n💳┇ايديك ~⪼ '..Id..'\n🎫┇معرفك ~⪼ '..UserName_User..'\n👨‍✈️┇رتبتك ~⪼ '..Status_Gps..'\n📨┇رسائلك ~⪼ '..NumMsg..'\n📧┇السحكات ~⪼ '..message_edit..' \n⌨️┇تتفاعلك ~⪼ '..TotalMsg..'\n💎┇ مجوهراتك ~⪼ '..Num_Games)
+sendPhoto(msg.chat_id_,msg.id_,taha.photos_[0].sizes_[1].photo_.persistent_id_,"\n| ɪᴅ: "..Id.."\n| ᴜsᴇʀ: "..UserName_User.."\n| sᴛᴀᴛᴇ: "..Status_Gps.."\n| ᴍsɢ: "..NumMsg)
 end
 else
-send(msg.chat_id_, msg.id_,'🎇┇ليس لديك صوره \n'..'\n*💳┇ايديك ~⪼ '..Id..'\n🎫┇معرفك ~⪼* ['..UserName_User..']*\n👨‍✈️┇رتبتك ~⪼ '..Status_Gps..'\n📨┇رسائلك ~⪼ '..NumMsg..'\n📧┇السحكات ~⪼ '..message_edit..' \n⌨️┇تتفاعلك ~⪼ '..TotalMsg..'\n💎┇ مجوهراتك ~⪼ '..Num_Games..'*') 
+send(msg.chat_id_, msg.id_,"\n| ɪᴅ: "..Id.."\n| ᴜsᴇʀ: ["..UserName_User.."]\n| sᴛᴀᴛᴇ: "..Status_Gps.."\n| ᴍsɢ: "..NumMsg) 
 end
 else
 if get_id then
@@ -4991,7 +4986,7 @@ local get_id = get_id:gsub('#game',Num_Games)
 local get_id = get_id:gsub('#photos',Total_Photp) 
 send(msg.chat_id_, msg.id_,'['..get_id..']') 
 else
-send(msg.chat_id_, msg.id_,'\n*💳┇ايديك ~⪼ '..Id..'\n🎫┇معرفك ~⪼* ['..UserName_User..']*\n👨‍✈️┇رتبتك ~⪼ '..Status_Gps..'\n📨┇رسائلك ~⪼ '..NumMsg..'\n📧┇السحكات ~⪼ '..message_edit..' \n⌨️┇تتفاعلك ~⪼ '..TotalMsg..'\n💎┇ مجوهراتك ~⪼ '..Num_Games..'*') 
+send(msg.chat_id_, msg.id_,"\n| ɪᴅ: "..Id.."\n| ᴜsᴇʀ: ["..UserName_User.."]\n| sᴛᴀᴛᴇ: "..Status_Gps.."\n| ᴍsɢ: "..NumMsg) 
 end
 end
 end,nil)   
