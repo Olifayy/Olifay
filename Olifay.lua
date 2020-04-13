@@ -27,7 +27,6 @@ print("\27[34m"..[[
                                                       
 >> CH > @JJJYT 
 >> DEVELOPER > @UfUuU
->> DEVELOPER > @fakhm3
 ]].."\27[m")
 
 io.popen("mkdir Olifay_Files")
