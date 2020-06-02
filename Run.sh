@@ -1,19 +1,6 @@
-#!/usr/bin/env bash
-cd $HOME/Olifay
-rm -rf $HOME/.telegram-cli
-install() {
+THIS_DIR=$(cd $(dirname $0); pwd)
+cd $THIS_DIR
 sudo chmod +x tg
-chmod +x Olifay
-chmod +x oy
-./oy
-}
-get() {
-rm -fr Olifay.lua
-rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/Olifayy/Olifay/master/Olifay.lua"
-lua Run.lua
-}
-installall(){
 apt update
 apt upgrade
 sudo apt-get update
@@ -37,18 +24,6 @@ sudo apt-get install libnotify-dev -y
 sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev -y
 sudo apt-get update 
 sudo apt-get upgrade -y
-}
-if [ "$1" = "ins" ]; then
-install
-fi
-if [ "$1" = "get" ]; then
-get
-fi
-installall
 cd ..
 rm -rf luarocks*
-cd Olifay
-rm -rf luarocks*
-lua Run.lua
-
-
+lua Olifay.lua
