@@ -759,6 +759,79 @@ function Dev_Olifay_File(msg,data)
 if msg then
 msg = data.message_
 text = msg.content_.text_
+function Dev_Olifay(msg)  
+local Dev_Olifay = false  
+for k,v in pairs(Ids_Dev) do  
+if msg.sender_user_id_ == v then  
+Dev_Olifay = true  
+end  
+end  
+return Dev_Olifay  
+end 
+function Bot(msg)  
+local idbot = false  
+if msg.sender_user_id_ == bot_id then  
+idbot = true  
+end  
+return idbot  
+end 
+function Dev_Olifay_User(user)  
+local Dev_Olifay_User = false  
+for k,v in pairs(Ids_Dev) do  
+if user == v then  
+Dev_Olifay_User = true  
+end  
+end  
+return Dev_Olifay_User  
+end 
+function DeveloperBot(msg) 
+local Status = redis:sismember(bot_id.."Olifay:Sudo:User", msg.sender_user_id_) 
+if Status or Dev_Olifay(msg) or Bot(msg) then  
+return true  
+else  
+return false  
+end  
+end
+function PresidentGroup(msg)
+local hash = redis:sismember(bot_id.."Olifay:Basic:Constructor"..msg.chat_id_, msg.sender_user_id_) 
+if hash or Dev_Olifay(msg) or DeveloperBot(msg) or Bot(msg) then  
+return true 
+else 
+return false 
+end 
+end
+function Constructor(msg)
+local hash = redis:sismember(bot_id..'Olifay:Constructor'..msg.chat_id_, msg.sender_user_id_) 
+if hash or Dev_Olifay(msg) or DeveloperBot(msg) or PresidentGroup(msg) or Bot(msg) then     
+return true    
+else    
+return false    
+end 
+end
+function Owner(msg)
+local hash = redis:sismember(bot_id..'Olifay:Manager'..msg.chat_id_,msg.sender_user_id_)    
+if hash or Dev_Olifay(msg) or DeveloperBot(msg) or PresidentGroup(msg) or Constructor(msg) or Bot(msg) then     
+return true    
+else    
+return false    
+end 
+end
+function Admin(msg)
+local hash = redis:sismember(bot_id..'Olifay:Mod:User'..msg.chat_id_,msg.sender_user_id_)    
+if hash or Dev_Olifay(msg) or DeveloperBot(msg) or PresidentGroup(msg) or Constructor(msg) or Owner(msg) or Bot(msg) then     
+return true    
+else    
+return false    
+end 
+end
+function Vips(msg)
+local hash = redis:sismember(bot_id..'Olifay:Special:User'..msg.chat_id_,msg.sender_user_id_) 
+if hash or Dev_Olifay(msg) or DeveloperBot(msg) or PresidentGroup(msg) or Constructor(msg) or Owner(msg) or Admin(msg) or Bot(msg) then     
+return true 
+else 
+return false 
+end 
+end
 ------------------------------------------------------------------------------------------------------------
 if msg.chat_id_ then
 local id = tostring(msg.chat_id_)
