@@ -5779,26 +5779,20 @@ text = "ܛ قائمه ردود المدير \n━━━━━━━━━━━�
 for k,v in pairs(list) do
 if redis:get(bot_id.."Olifay:Add:Rd:Manager:Gif"..v..msg.chat_id_) then
 db = "متحركه 🎭"
-return false end
-if redis:get(bot_id.."Olifay:Add:Rd:Manager:Vico"..v..msg.chat_id_) then
+elseif redis:get(bot_id.."Olifay:Add:Rd:Manager:Vico"..v..msg.chat_id_) then
 db = "بصمه 📢"
 return false end
 if redis:get(bot_id.."Olifay:Add:Rd:Manager:Stekrs"..v..msg.chat_id_) then
 db = "ملصق 🃏"
-return false end
-if redis:get(bot_id.."Olifay:Add:Rd:Manager:Text"..v..msg.chat_id_) then
+elseif redis:get(bot_id.."Olifay:Add:Rd:Manager:Text"..v..msg.chat_id_) then
 db = "رساله ✉"
-return false end
-if redis:get(bot_id.."Olifay:Add:Rd:Manager:Photo"..v..msg.chat_id_) then
+elseif redis:get(bot_id.."Olifay:Add:Rd:Manager:Photo"..v..msg.chat_id_) then
 db = "صوره 🎇"
-return false end
-if redis:get(bot_id.."Olifay:Add:Rd:Manager:Video"..v..msg.chat_id_) then
+elseif redis:get(bot_id.."Olifay:Add:Rd:Manager:Video"..v..msg.chat_id_) then
 db = "فيديو 📹"
-return false end
-if redis:get(bot_id.."Olifay:Add:Rd:Manager:File"..v..msg.chat_id_) then
+elseif redis:get(bot_id.."Olifay:Add:Rd:Manager:File"..v..msg.chat_id_) then
 db = "ملف 📁"
-return false end
-if redis:get(bot_id.."Olifay:Add:Rd:Manager:Audio"..v..msg.chat_id_) then
+elseif redis:get(bot_id.."Olifay:Add:Rd:Manager:Audio"..v..msg.chat_id_) then
 db = "اغنيه 🎵"
 end
 text = text..""..k.." » {"..v.."} » {"..db.."}\n"
