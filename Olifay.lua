@@ -2138,7 +2138,7 @@ if text == 'تفعيل' and DeveloperBot(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 if TypeForChat ~= 'ForSuppur' then
@@ -2197,7 +2197,7 @@ if text == 'تعطيل' and DeveloperBot(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
@@ -2241,7 +2241,7 @@ if text == 'تفعيل' and not DeveloperBot(msg) and not redis:get(bot_id..'Oli
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 if TypeForChat ~= 'ForSuppur' then
@@ -2314,7 +2314,7 @@ if text == '/start' then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 if Dev_Olifay(msg) then
@@ -2808,7 +2808,7 @@ if text == 'جلب نسخه احتياطيه' and Dev_Olifay(msg) or text == 'ج
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 local Groups = redis:smembers(bot_id..'Olifay:Chek:Groups')  
@@ -2924,7 +2924,7 @@ if text == ("مسح قائمه العام") and Dev_Olifay(msg) or text == ("م�
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 redis:del(bot_id.."Olifay:Removal:User:Groups")
@@ -2934,7 +2934,7 @@ if text == ("مسح المطورين") and Dev_Olifay(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 redis:del(bot_id.."Olifay:Sudo:User")
@@ -2944,7 +2944,7 @@ if text == ("مسح المنشئين الاساسين") and DeveloperBot(msg) or
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 redis:del(bot_id.."Olifay:Basic:Constructor"..msg.chat_id_)
@@ -2956,7 +2956,7 @@ if da.status_.ID == "ChatMemberStatusCreator" then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 redis:del(bot_id.."Olifay:Basic:Constructor"..msg.chat_id_)
@@ -2968,7 +2968,7 @@ if text == ("مسح المنشئين") and PresidentGroup(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 redis:del(bot_id.."Olifay:Constructor"..msg.chat_id_)
@@ -2978,7 +2978,7 @@ if text == ("مسح المدراء") and Constructor(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 redis:del(bot_id.."Olifay:Manager"..msg.chat_id_)
@@ -2988,7 +2988,7 @@ if text == ("مسح الادمنيه") and Owner(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 redis:del(bot_id.."Olifay:Mod:User"..msg.chat_id_)
@@ -2998,7 +2998,7 @@ if text == ("مسح المميزين") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 redis:del(bot_id.."Olifay:Special:User"..msg.chat_id_)
@@ -3008,7 +3008,7 @@ if text == ("مسح المكتومين") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 redis:del(bot_id.."Olifay:Silence:User:Group"..msg.chat_id_)
@@ -3018,7 +3018,7 @@ if text == ("مسح المحظورين") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 redis:del(bot_id.."Olifay:Removal:User:Group"..msg.chat_id_)
@@ -3028,7 +3028,7 @@ if text == "حذف الاوامر المضافه" and Constructor(msg) or text =
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 local list = redis:smembers(bot_id.."Olifay:Command:List:Group"..msg.chat_id_)
@@ -3042,7 +3042,7 @@ if text == "مسح الصلاحيات" and Constructor(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 local list = redis:smembers(bot_id.."Olifay:Validitys:Group"..msg.chat_id_)
@@ -3053,7 +3053,7 @@ if text == ("قائمه العام") and Dev_Olifay(msg) or text == ("المحظ
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 local list = redis:smembers(bot_id.."Olifay:Removal:User:Groups")
@@ -3075,7 +3075,7 @@ if text == ("المطورين") and Dev_Olifay(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 local list = redis:smembers(bot_id.."Olifay:Sudo:User")
@@ -3097,7 +3097,7 @@ if text == "المنشئين الاساسين" and DeveloperBot(msg) or text == 
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 local list = redis:smembers(bot_id.."Olifay:Basic:Constructor"..msg.chat_id_)
@@ -3121,7 +3121,7 @@ if da.status_.ID == "ChatMemberStatusCreator" then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 local list = redis:smembers(bot_id.."Olifay:Basic:Constructor"..msg.chat_id_)
@@ -3145,7 +3145,7 @@ if text == ("المنشئين") and PresidentGroup(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 local list = redis:smembers(bot_id.."Olifay:Constructor"..msg.chat_id_)
@@ -3167,7 +3167,7 @@ if text == ("المدراء") and Constructor(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 local list = redis:smembers(bot_id.."Olifay:Manager"..msg.chat_id_)
@@ -3189,7 +3189,7 @@ if text == ("الادمنيه") and Owner(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 local list = redis:smembers(bot_id.."Olifay:Mod:User"..msg.chat_id_)
@@ -3308,7 +3308,7 @@ if text == ("حظر عام") and tonumber(msg.reply_to_message_id_) ~= 0 and Dev
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3330,7 +3330,7 @@ if text == ("الغاء العام") and tonumber(msg.reply_to_message_id_) ~= 0
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3343,7 +3343,7 @@ if text == ("اضف مطور") and tonumber(msg.reply_to_message_id_) ~= 0 and D
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3356,7 +3356,7 @@ if text == ("حذف مطور") and tonumber(msg.reply_to_message_id_) ~= 0 and D
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3369,7 +3369,7 @@ if text == ("رفع منشئ اساسي") and tonumber(msg.reply_to_message_id_)
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 function FunctionStatus(arg, result)
@@ -3382,7 +3382,7 @@ if text == ("تنزيل منشئ اساسي") and tonumber(msg.reply_to_message_
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 function FunctionStatus(arg, result)
@@ -3395,7 +3395,7 @@ if text == ("رفع منشئ اساسي") and tonumber(msg.reply_to_message_id_)
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sender_user_id_},function(arg,da) 
@@ -3414,7 +3414,7 @@ if da.status_.ID == "ChatMemberStatusCreator" then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3429,7 +3429,7 @@ if text == "رفع منشئ" and tonumber(msg.reply_to_message_id_) ~= 0 and Pre
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 function FunctionStatus(arg, result)
@@ -3442,7 +3442,7 @@ if text and text:match("^تنزيل منشئ$") and tonumber(msg.reply_to_messag
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3455,7 +3455,7 @@ if text == ("رفع مدير") and tonumber(msg.reply_to_message_id_) ~= 0 and C
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 function FunctionStatus(arg, result)
@@ -3468,7 +3468,7 @@ if text == ("تنزيل مدير") and tonumber(msg.reply_to_message_id_) ~= 0 a
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 function FunctionStatus(arg, result)
@@ -3481,7 +3481,7 @@ if text == ("رفع ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 and O
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 if not Constructor(msg) and redis:get(bot_id.."Olifay:Cheking:Seted"..msg.chat_id_) then 
@@ -3498,7 +3498,7 @@ if text == ("تنزيل ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 a
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 function FunctionStatus(arg, result)
@@ -3511,7 +3511,7 @@ if text == ("رفع مميز") and tonumber(msg.reply_to_message_id_) ~= 0 and A
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 if not Constructor(msg) and redis:get(bot_id.."Olifay:Cheking:Seted"..msg.chat_id_) then 
@@ -3528,7 +3528,7 @@ if text == ("تنزيل مميز") and tonumber(msg.reply_to_message_id_) ~= 0 a
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 function FunctionStatus(arg, result)
@@ -3541,7 +3541,7 @@ if text == ("حظر") and msg.reply_to_message_id_ ~= 0 and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 if not Constructor(msg) and redis:get(bot_id.."Olifay:Lock:Ban:Group"..msg.chat_id_) then 
@@ -3573,7 +3573,7 @@ if text == ("الغاء حظر") and tonumber(msg.reply_to_message_id_) ~= 0 and
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3591,7 +3591,7 @@ if text == ("كتم") and msg.reply_to_message_id_ ~= 0 and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 if msg.can_be_deleted_ == false then 
@@ -3612,7 +3612,7 @@ if text == ("الغاء كتم") and tonumber(msg.reply_to_message_id_) ~= 0 and
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3625,7 +3625,7 @@ if text == ("الغاء تقيد") and tonumber(msg.reply_to_message_id_) ~= 0 a
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3643,7 +3643,7 @@ if text == ("تقيد") and tonumber(msg.reply_to_message_id_) ~= 0 and Admin(ms
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3664,7 +3664,7 @@ if text and text:match("^حظر عام @(.*)$") and Dev_Olifay(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3693,7 +3693,7 @@ if text and text:match("^الغاء العام @(.*)$") and Dev_Olifay(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3710,7 +3710,7 @@ if text and text:match("^اضف مطور @(.*)$") and Dev_Olifay(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3731,7 +3731,7 @@ if text and text:match("^حذف مطور @(.*)$") and Dev_Olifay(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3748,7 +3748,7 @@ if text and text:match("^رفع منشئ اساسي @(.*)$") and DeveloperBot(ms
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 function FunctionStatus(arg, result)
@@ -3769,7 +3769,7 @@ if text and text:match("^تنزيل منشئ اساسي @(.*)$") and DeveloperBo
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 function FunctionStatus(arg, result)
@@ -3788,7 +3788,7 @@ if da.status_.ID == "ChatMemberStatusCreator" then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3814,7 +3814,7 @@ if da.status_.ID == "ChatMemberStatusCreator" then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -3834,7 +3834,7 @@ if text and text:match("^رفع منشئ @(.*)$") and PresidentGroup(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 function FunctionStatus(arg, result)
@@ -3855,7 +3855,7 @@ if text and text:match("^تنزيل منشئ @(.*)$") and PresidentGroup(msg) th
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 function FunctionStatus(arg, result)
@@ -3872,7 +3872,7 @@ if text and text:match("^رفع مدير @(.*)$") and Constructor(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 function FunctionStatus(arg, result)
@@ -3893,7 +3893,7 @@ if text and text:match("^تنزيل مدير @(.*)$") and Constructor(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 function FunctionStatus(arg, result)
@@ -3910,7 +3910,7 @@ if text and text:match("^رفع ادمن @(.*)$") and Owner(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 if not Constructor(msg) and redis:get(bot_id.."Olifay:Cheking:Seted"..msg.chat_id_) then 
@@ -3935,7 +3935,7 @@ if text and text:match("^تنزيل ادمن @(.*)$") and Owner(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 function FunctionStatus(arg, result)
@@ -3952,7 +3952,7 @@ if text and text:match("^رفع مميز @(.*)$") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 if not Constructor(msg) and redis:get(bot_id.."Olifay:Cheking:Seted"..msg.chat_id_) then 
@@ -3977,7 +3977,7 @@ if text and text:match("^تنزيل مميز @(.*)$") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 function FunctionStatus(arg, result)
@@ -4090,7 +4090,7 @@ if text and text:match("^حظر @(.*)$") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 if not Constructor(msg) and redis:get(bot_id.."Olifay:Lock:Ban:Group"..msg.chat_id_) then 
@@ -4130,7 +4130,7 @@ if text and text:match("^الغاء حظر @(.*)$") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -4152,7 +4152,7 @@ if text and text:match("^كتم @(.*)$") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 if msg.can_be_deleted_ == false then 
@@ -4181,7 +4181,7 @@ if text and text:match("^الغاء كتم @(.*)$") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -4198,7 +4198,7 @@ if text and text:match("^تقيد @(.*)$") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -4264,7 +4264,7 @@ if text and text:match("^الغاء تقيد @(.*)$") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 function FunctionStatus(arg, result)
@@ -4285,7 +4285,7 @@ if text and text:match("^طرد @(.*)$") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 if msg.can_be_deleted_ == false then 
@@ -4324,7 +4324,7 @@ if text and text:match("^حظر عام (%d+)$") and Dev_Olifay(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 if Dev_Olifay_User(text:match("^حظر عام (%d+)$")) == true then
@@ -4342,7 +4342,7 @@ if text and text:match("^الغاء العام (%d+)$") and Dev_Olifay(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 redis:srem(bot_id.."Olifay:Removal:User:Groups", text:match("^الغاء العام (%d+)$"))
@@ -4353,7 +4353,7 @@ if text and text:match("^اضف مطور (%d+)$") and Dev_Olifay(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 redis:sadd(bot_id.."Olifay:Sudo:User", text:match("^اضف مطور (%d+)$"))
@@ -4363,7 +4363,7 @@ if text and text:match("^حذف مطور (%d+)$") and Dev_Olifay(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 redis:srem(bot_id.."Olifay:Sudo:User", text:match("^حذف مطور (%d+)$"))
@@ -4373,7 +4373,7 @@ if text and text:match("^رفع منشئ اساسي (%d+)$") and DeveloperBot(ms
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 redis:sadd(bot_id.."Olifay:Basic:Constructor"..msg.chat_id_, text:match("^رفع منشئ اساسي (%d+)$") )
@@ -4383,7 +4383,7 @@ if text and text:match("^تنزيل منشئ اساسي (%d+)$") and DeveloperBo
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 redis:srem(bot_id.."Olifay:Basic:Constructor"..msg.chat_id_, text:match("^تنزيل منشئ اساسي (%d+)$") )
@@ -4393,7 +4393,7 @@ if text and text:match("^رفع منشئ (%d+)$") and PresidentGroup(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 redis:sadd(bot_id.."Olifay:Constructor"..msg.chat_id_, text:match("^رفع منشئ (%d+)$"))
@@ -4403,7 +4403,7 @@ if text and text:match("^تنزيل منشئ (%d+)$") and PresidentGroup(msg) th
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 redis:srem(bot_id.."Olifay:Constructor"..msg.chat_id_, text:match("^تنزيل منشئ (%d+)$"))
@@ -4413,7 +4413,7 @@ if text and text:match("^رفع مدير (%d+)$") and Constructor(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 redis:sadd(bot_id.."Olifay:Manager"..msg.chat_id_, text:match("^رفع مدير (%d+)$") )
@@ -4423,7 +4423,7 @@ if text and text:match("^تنزيل مدير (%d+)$") and Constructor(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 redis:srem(bot_id.."Olifay:Manager"..msg.chat_id_, text:match("^تنزيل مدير (%d+)$") )
@@ -4433,7 +4433,7 @@ if text and text:match("^رفع ادمن (%d+)$") and Owner(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 if not Constructor(msg) and redis:get(bot_id.."Olifay:Cheking:Seted"..msg.chat_id_) then 
@@ -4447,7 +4447,7 @@ if text and text:match("^تنزيل ادمن (%d+)$") and Owner(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 redis:srem(bot_id.."Olifay:Mod:User"..msg.chat_id_, text:match("^تنزيل ادمن (%d+)$"))
@@ -4457,7 +4457,7 @@ if text and text:match("^رفع مميز (%d+)$") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 if not Constructor(msg) and redis:get(bot_id.."Olifay:Cheking:Seted"..msg.chat_id_) then 
@@ -4471,7 +4471,7 @@ if text and text:match("^تنزيل مميز (%d+)$") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end 
 redis:srem(bot_id.."Olifay:Special:User"..msg.chat_id_, text:match("^تنزيل مميز (%d+)$") )
@@ -4481,7 +4481,7 @@ if text and text:match("^حظر (%d+)$") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 if not Constructor(msg) and redis:get(bot_id.."Olifay:Lock:Ban:Group"..msg.chat_id_) then 
@@ -4510,7 +4510,7 @@ if text and text:match("^الغاء حظر (%d+)$") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 if tonumber(text:match("^الغاء حظر (%d+)$") ) == tonumber(bot_id) then
@@ -4525,7 +4525,7 @@ if text and text:match("^كتم (%d+)$") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 if Rank_Checking(text:match("^كتم (%d+)$"), msg.chat_id_) == true then
@@ -4547,7 +4547,7 @@ if text and text:match("^الغاء كتم (%d+)$") and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end
 redis:srem(bot_id.."Olifay:Silence:User:Group"..msg.chat_id_,text:match("^الغاء كتم (%d+)$") )
@@ -5379,7 +5379,7 @@ if text ==("تثبيت") and msg.reply_to_message_id_ ~= 0 and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end  
 if redis:sismember(bot_id.."Olifay:Lock:pin",msg.chat_id_) and not Constructor(msg) then
@@ -5404,7 +5404,7 @@ if text == "الغاء التثبيت" and Admin(msg) then
 local url,res = http.request('http://teamstorm.tk/chhh/?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Olifay ~= true then
-send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @Olifay }')   
+send(msg.chat_id_,msg.id_,'\nܛ عليك الاشتراك في قناة البوت \nܛ قناة البوت ← { @JJJYT }')   
 return false 
 end  
 if redis:sismember(bot_id.."Olifay:Lock:pin",msg.chat_id_) and not Constructor(msg) then
