@@ -5775,32 +5775,32 @@ send(msg.chat_id_, msg.id_,"ܛ تم مسح قائمه ردود المدير")
 return false end
 if text == ("ردود المدير") and Owner(msg) then
 local list = redis:smembers(bot_id.."Olifay:List:Manager"..msg.chat_id_.."")
-text = "ܛ قائمه ردود المدير \n━━━━━━━━━━━━━\n"
+tttt = "ܛ قائمه ردود المدير \n━━━━━━━━━━━━━\n"
 for k,v in pairs(list) do
 if redis:get(bot_id.."Olifay:Add:Rd:Manager:Gif"..v..msg.chat_id_) then
 db = "متحركه 🎭"
 elseif redis:get(bot_id.."Olifay:Add:Rd:Manager:Vico"..v..msg.chat_id_) then
 db = "بصمه 📢"
-return false end
-if redis:get(bot_id.."Olifay:Add:Rd:Manager:Stekrs"..v..msg.chat_id_) then
+elseif redis:get(bot_id.."Olifay:Add:Rd:Manager:Stekrs"..v..msg.chat_id_) then
 db = "ملصق 🃏"
 elseif redis:get(bot_id.."Olifay:Add:Rd:Manager:Text"..v..msg.chat_id_) then
-db = "رساله ✉"
+db = "رساله ✉" 
 elseif redis:get(bot_id.."Olifay:Add:Rd:Manager:Photo"..v..msg.chat_id_) then
-db = "صوره 🎇"
+db = "صوره 🎇" 
 elseif redis:get(bot_id.."Olifay:Add:Rd:Manager:Video"..v..msg.chat_id_) then
-db = "فيديو 📹"
+db = "فيديو 📹" 
 elseif redis:get(bot_id.."Olifay:Add:Rd:Manager:File"..v..msg.chat_id_) then
-db = "ملف 📁"
+db = "ملف 📁" 
 elseif redis:get(bot_id.."Olifay:Add:Rd:Manager:Audio"..v..msg.chat_id_) then
-db = "اغنيه 🎵"
+db = "اغنيه 🎵" 
 end
-text = text..""..k.." » {"..v.."} » {"..db.."}\n"
+tttt = tttt..""..k.." » {["..v.."]} » {["..db.."]}\n"
 end
+print(tttt)
 if #list == 0 then
 text = "ܛ عذرا لا يوجد ردود للمدير في المجموعه"
 end
-send(msg.chat_id_, msg.id_,"["..text.."]")
+send(msg.chat_id_, msg.id_,"["..tttt.."]")
 return false end
 if text == "اضف رد" and Owner(msg) then
 send(msg.chat_id_, msg.id_,"ܛ ارسل الان الكلمه لاضافتها في ردود المدير ")
@@ -6495,7 +6495,7 @@ else
 sendPhoto(msg.chat_id_,msg.id_,taha.photos_[0].sizes_[1].photo_.persistent_id_,'\n 𝒊𝒅 𓂅  '..Id..' 𓍯\n 𝒖𝒔𝒆𝒓𓂅 '..UserName_User..' 𓍯\n 𝒔𝒕𝒂𓂅 '..Status_Gps..' 𓍯\n 𝒎𝒔𝒈𝒆𓂅 '..NumMsg..' 𓍯')
 end
 else
-send(msg.chat_id_, msg.id_,'\n 𝒊𝒅 𓂅  '..Id..' 𓍯\n 𝒖𝒔𝒆𝒓𓂅 '..UserName_User..' 𓍯\n 𝒔𝒕𝒂𓂅 '..Status_Gps..' 𓍯\n 𝒎𝒔𝒈𝒆𓂅 '..NumMsg..' 𓍯') 
+send(msg.chat_id_, msg.id_,'\n 𝒊𝒅 𓂅  '..Id..' 𓍯\n 𝒖𝒔𝒆𝒓𓂅 ['..UserName_User..'] 𓍯\n 𝒔𝒕𝒂𓂅 '..Status_Gps..' 𓍯\n 𝒎𝒔𝒈𝒆𓂅 '..NumMsg..' 𓍯') 
 end
 else
 if Get_Is_Id then
@@ -6511,7 +6511,7 @@ local Get_Is_Id = Get_Is_Id:gsub('#game',Num_Games)
 local Get_Is_Id = Get_Is_Id:gsub('#photos',Total_Photp) 
 send(msg.chat_id_, msg.id_,'['..Get_Is_Id..']') 
 else
-send(msg.chat_id_, msg.id_,'\n 𝒊𝒅 𓂅  '..Id..' 𓍯\n 𝒖𝒔𝒆𝒓𓂅 '..UserName_User..' 𓍯\n 𝒔𝒕𝒂𓂅 '..Status_Gps..' 𓍯\n 𝒎𝒔𝒈𝒆𓂅 '..NumMsg..' 𓍯') 
+send(msg.chat_id_, msg.id_,'\n 𝒊𝒅 𓂅  '..Id..' 𓍯\n 𝒖𝒔𝒆𝒓𓂅 ['..UserName_User..'] 𓍯\n 𝒔𝒕𝒂𓂅 '..Status_Gps..' 𓍯\n 𝒎𝒔𝒈𝒆𓂅 '..NumMsg..' 𓍯') 
 end
 end
 end,nil)   
