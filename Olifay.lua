@@ -5438,6 +5438,7 @@ end,nil)
 end
 return false 
 end
+
 if text ==("مسح المطرودين") and Admin(msg) then    
 local function delbans(extra, result)  
 if not msg.can_be_deleted_ == true then  
@@ -5451,7 +5452,7 @@ tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_i
 end  
 send(msg.chat_id_, msg.id_,"ܛ  تم الغاء الحظر عن *: "..num.." * شخص") 
 end    
-return false 
+tdcli_function({ID="GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersKicked"},offset_ = 0,limit_ = 200}, delbans, {chat_id_ = msg.chat_id_, msg_id_ = msg.id_})    
 end
 if text == "مسح البوتات" and Admin(msg) then 
 tdcli_function ({ ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(arg,tah)  
